@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		.classelegal {
+			border: solid black 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Exercicio 6</h1>
+	<h6> Dado o objeto abaixo:<br>
+		let salarios = {<br>
+		Neymar: 100,<br>
+		Ronaldinho: 160,<br>
+		Ronaldo: 130<br>
+		}<br>
+		Escreva uma função que some o salário de todos os jogadores e exiba em uma mensagem de alerta.
+	</h6>
+</body>
+
+<script>
+
+	salarios = {
+		neymar: 100,
+		ronaldinho: 160,
+		ronaldo: 130
+	}
+
+	function onload() {
+		let totalSalario = 0
+		for ( let a in salarios) {
+			prop = a
+			totalSalario += salarios[a];
+		}
+		alert(totalSalario)
+	}
+	window.onload = onload();
+
+
+
+</script>
+
+</html>

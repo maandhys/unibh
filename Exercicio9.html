@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1>Exercicio 9</h1>
+	<h6> Obtenha o elemento li com o texto Item 9 dentro dele e exiba esse valor <span>.
+	</h6>
+	<ol>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 9</li>
+	</ol>
+</body>
+
+<script>
+
+	function onload() {
+
+		let x = document.getElementsByTagName("LI")
+		for (let a of x) {
+			if(a.innerHTML == "Item 9")  
+				console.log(a.innerHTML)
+		}
+
+	}
+	window.onload = onload();
+</script>
+
+</html>

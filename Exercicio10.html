@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1>Exercicio 10</h1>
+	<h6> 4. Crie uma função chamada exibirInnerHTML que receberá 1 parametro (um elemento) 
+		e dentro da função escreverá o innerHTML no console. <span>.
+	</h6>
+	<p id="texto"> Texto de teste</p>
+</body>
+
+<script>
+
+	function onload() {
+		exibirInnherHtml(document.getElementById("texto").innerHTML);
+	}
+
+	function exibirInnherHtml(innerHTML){
+		console.log(innerHTML)
+
+	}
+	window.onload = onload();
+</script>
+
+</html>

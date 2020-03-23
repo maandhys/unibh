@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1>Exercicio 8</h1>
+	<h6> Exiba no console o conteudo dentro das tags <span>.
+	</h6>
+	<span> HAHAHHAHAHHAHA </span>
+	<span> TESTETSTETSTET </span>
+	<span> NAYARA </span>
+	<span> ARIANE </span>
+	<span> PIMENTEL </span>
+	<span> CIENCA DA COMPUTACAO </span>
+</body>
+
+<script>
+
+	function onload() {
+
+		let x = document.getElementsByTagName("SPAN")
+		for (let a of x) {
+			console.log(a.innerHTML)
+		}
+
+	}
+	window.onload = onload();
+</script>
+
+</html>

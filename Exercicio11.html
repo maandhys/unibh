@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1>Exercicio 11</h1>
+	<h6> Repita essa ação para as tags p, strong, e li com id=item span
+	</h6>
+
+	<ol>
+		<li id="item"> Texto Item</li>
+	</ol>
+	<p> Texto p</p>
+	<strong> Texto strong</strong>
+	
+	<span>Texto SPAM</span>
+
+</body>
+
+<script>
+
+	function onload() {
+		exibirInnherHtml(document.getElementById("item").innerHTML);
+		let p = document.getElementsByTagName("P");
+		exibirInnherHtml(p[0].innerHTML);
+		let strong = document.getElementsByTagName("STRONG")
+		exibirInnherHtml(strong[0].innerHTML);
+		let span = document.getElementsByTagName("SPAN")
+		exibirInnherHtml(span[0].innerHTML);
+
+	
+	}
+
+	function exibirInnherHtml(innerHTML) {
+		console.log(innerHTML)
+
+	}
+	window.onload = onload();
+</script>
+
+</html>

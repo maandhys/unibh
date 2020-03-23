@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<style> 
+	</style>
+</head>
+<body>
+	<h1>Exercicio 3</h1>
+	<h6>Crie uma página web que pergunta por dois números X e Y e 
+		retorna a potência do primeiro pelo segundo através de uma função pow(X,Y)
+	</h6>
+
+	<label for="fname">Informe X: </label>
+	<input id="X"><br><br>
+	<label for="fname">Informe Y: </label>
+	<input id="Y" ><br><br>
+
+    pow(X,Y): <span id="result"></span>
+
+
+</body>
+
+<script>
+	function pow(a,b) {
+		return Math.pow(a,b)
+	}
+
+	Y.oninput = function() {
+		result.innerHTML = Math.pow(parseInt(Y.value), parseInt(X.value));
+	};
+
+	X.oninput = function() {
+		result.innerHTML = Math.pow(parseInt(Y.value), parseInt(X.value));
+	};
+
+</script>
+</html>

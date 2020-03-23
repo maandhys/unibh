@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		.classelegal {
+			border: solid black 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Exercicio 5</h1>
+	<h6> Crie um objeto vazio Aluno
+		1. Adicione a propriedade nome com o valor com o seu nome.
+		2. Adicione a propriedade sobrenome com o valor do seu sobrenome 
+		3. Troque o nome para o nome de uma pessoa que
+		você gosta muito 
+		4. Remova a propriedade nome
+		5. Verifique se a propriedade “time” existe neste objeto.
+		Não esqueça de adicionar um console.log entre cada execução
+	</h6>
+</body>
+
+<script>
+
+	function onload() {
+		aluno = {}
+		console.log("Criacao objeto aluno: " + aluno)
+		aluno.nome = "Nayara"
+		console.log("Criacao atributo nome: " + aluno.nome)
+		aluno.sobrenome = "Pimentel"
+		console.log("Criacao atributo sobrenome: " + aluno.sobrenome)
+		aluno.nome = "Maura"
+		console.log("Alteracao nome: " + aluno.nome)
+        delete aluno.nome
+		console.log("remocao nome, aluno.nome = " + aluno.nome)
+		let existe = (aluno.time)? "existe" : "nao existe"
+		console.log("propriedade time " + existe + " no objeto aluno")
+
+
+	}
+
+	window.onload = onload();
+
+
+
+</script>
+
+</html>
